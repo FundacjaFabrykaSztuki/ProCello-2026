@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Galeria Pro Cello</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'DM Sans', Arial, sans-serif;
+            margin: 0;
+            padding: 40px;
+            background: #fafafa;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .description {
+            max-width: 800px;
+            margin: 0 auto 40px auto;
+            text-align: center;
+            line-height: 1.6;
+            color: #333;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 15px;
+        }
+        .gallery img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        /* LIGHTBOX */
+        .lightbox {
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.9);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 999;
+        }
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+        }
+
+        /* STRZAŁKI */
+        .arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 40px;
+            color: white;
+            cursor: pointer;
+            user-select: none;
+            padding: 20px;
+        }
+        .arrow.left { left: 10px; }
+        .arrow.right { right: 10px; }
+
+        .photo-credit {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 0.9rem;
+            color: #555;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Galeria Pro Cello</h1>
+
+<div class="description">
+    <p>Serdecznie zapraszamy do galerii zdjęć z naszych ostatnich Kursów ProCello w Szamotułach. To piękne wspomnienia dni wypełnionych muzyką, spotkaniami i wspólnym muzykowaniem w wyjątkowej atmosferze. Mamy nadzieję, że fotografie pozwolą jeszcze raz wrócić do tych inspirujących chwil.</p>
+</div>
+
+<div class="gallery">
+<img src="Zdjecie1.jpeg">
+<img src="Zdjecie2.jpeg">
+<img src="Zdjecie3.jpeg">
+<img src="Zdjecie4.jpeg">
+<img src="Zdjecie5.jpeg">
+<img src="Zdjecie6.jpeg">
+<img src="Zdjecie7.jpeg">
+<img src="Zdjecie8.jpeg">
+<img src="Zdjecie9.jpeg">
+<img src="Zdjecie10.jpeg">
+<img src="Zdjecie11.jpeg">
+<img src="Zdjecie12.jpeg">
+<img src="Zdjecie13.jpeg">
+<img src="Zdjecie14.jpeg">
+<img src="Zdjecie15.jpeg">
+<img src="Zdjecie16.jpeg">
+<img src="Zdjecie17.jpeg">
+<img src="Zdjecie18.jpeg">
+<img src="Zdjecie19.jpeg">
+<img src="Zdjecie20.jpeg">
+<img src="Zdjecie21.jpeg">
+<img src="Zdjecie22.jpeg">
+<img src="Zdjecie23.jpeg">
+<img src="Zdjecie24.jpeg">
+<img src="Zdjecie25.jpeg">
+<img src="Zdjecie26.jpeg">
+<img src="Zdjecie27.jpeg">
+<img src="Zdjecie28.jpeg">
+<img src="Zdjecie29.jpeg">
+<img src="Zdjecie30.jpeg">
+<img src="Zdjecie31.jpeg">
+<img src="Zdjecie32.jpeg">
+<img src="Zdjecie33.jpeg">
+<img src="Zdjecie34.jpeg">
+<img src="Zdjecie35.jpeg">
+<img src="Zdjecie36.jpeg">
+<img src="Zdjecie37.jpeg">
+<img src="Zdjecie38.jpeg">
+<img src="Zdjecie39.jpeg">
+<img src="Zdjecie40.jpeg">
+<img src="Zdjecie41.jpeg">
+<img src="Zdjecie42.jpeg">
+<img src="Zdjecie43.jpeg">
+<img src="Zdjecie44.jpeg">
+<img src="Zdjecie45.jpeg">
+<img src="Zdjecie46.jpeg">
+<img src="Zdjecie47.jpeg">
+<img src="Zdjecie48.jpeg">
+<img src="Zdjecie49.jpeg">
+<img src="Zdjecie50.jpeg">
+<img src="Zdjecie51.jpeg">
+<img src="Zdjecie52.jpeg">
+<img src="Zdjecie53.jpeg">
+<img src="Zdjecie54.jpeg">
+<img src="Zdjecie55.jpeg">
+<img src="Zdjecie56.jpeg">
+<img src="Zdjecie57.jpeg">
+<img src="Zdjecie58.jpeg">
+<img src="Zdjecie59.jpeg">
+<img src="Zdjecie60.jpeg">
+<img src="Zdjecie61.jpeg">
+<img src="Zdjecie62.jpeg">
+<img src="Zdjecie63.jpeg">
+<img src="Zdjecie64.jpeg">
+<img src="Zdjecie65.jpeg">
+<img src="Zdjecie66.jpeg">
+<img src="Zdjecie67.jpeg">
+<img src="Zdjecie68.jpeg">
+<img src="Zdjecie69.jpeg">
+<img src="Zdjecie70.jpeg">
+<img src="Zdjecie71.jpeg">
+<img src="Zdjecie72.jpeg">
+<img src="Zdjecie73.jpeg">
+<img src="Zdjecie74.jpeg">
+<img src="Zdjecie75.jpeg">
+<img src="Zdjecie76.jpeg">
+<img src="Zdjecie77.jpeg">
+<img src="Zdjecie78.jpeg">
+<img src="Zdjecie79.jpeg">
+<img src="Zdjecie80.jpeg">
+<img src="Zdjecie81.jpeg">
+<img src="Zdjecie82.jpeg">
+<img src="Zdjecie83.jpeg">
+<img src="Zdjecie84.jpeg">
+<img src="Zdjecie85.jpeg">
+<img src="Zdjecie86.jpeg">
+<img src="Zdjecie87.jpeg">
+<img src="Zdjecie88.jpeg">
+<img src="Zdjecie89.jpeg">
+<img src="Zdjecie90.jpeg">
+<img src="Zdjecie91.jpeg">
+<img src="Zdjecie92.jpeg">
+<img src="Zdjecie93.jpeg">
+<img src="Zdjecie94.jpeg">
+<img src="Zdjecie95.jpeg">
+<img src="Zdjecie96.jpeg">
+<img src="Zdjecie97.jpeg">
+<img src="Zdjecie98.jpeg">
+<img src="Zdjecie99.jpeg">
+<img src="Zdjecie100.jpeg">
+<img src="Zdjecie101.jpeg">
+<img src="Zdjecie102.jpeg">
+<img src="Zdjecie103.jpeg">
+<img src="Zdjecie104.jpeg">
+<img src="Zdjecie105.jpeg">
+<img src="Zdjecie106.jpeg">
+<img src="Zdjecie107.jpeg">
+<img src="Zdjecie108.jpeg">
+<img src="Zdjecie109.jpeg">
+<img src="Zdjecie110.jpeg">
+<img src="Zdjecie111.jpeg">
+<img src="Zdjecie112.jpeg">
+<img src="Zdjecie113.jpeg">
+<img src="Zdjecie114.jpeg">
+<img src="Zdjecie115.jpeg">
+<img src="Zdjecie116.jpeg">
+<img src="Zdjecie117.jpeg">
+<img src="Zdjecie118.jpeg">
+<img src="Zdjecie119.jpeg">
+<img src="Zdjecie120.jpeg">
+<img src="Zdjecie121.jpeg">
+<img src="Zdjecie122.jpeg">
+<img src="Zdjecie123.jpeg">
+<img src="Zdjecie124.jpeg">
+<img src="Zdjecie125.jpeg">
+<img src="Zdjecie126.jpeg">
+<img src="Zdjecie127.jpeg">
+<img src="Zdjecie128.jpeg">
+<img src="Zdjecie129.jpeg">
+<img src="Zdjecie130.jpeg">
+<img src="Zdjecie131.jpeg">
+<img src="Zdjecie132.jpeg">
+<img src="Zdjecie133.jpeg">
+<img src="Zdjecie134.jpeg">
+<img src="Zdjecie135.jpeg">
+<img src="Zdjecie136.jpeg">
+<img src="Zdjecie137.jpeg">
+<img src="Zdjecie138.jpeg">
+<img src="Zdjecie139.jpeg">
+<img src="Zdjecie140.jpeg">
+<img src="Zdjecie141.jpeg">
+<img src="Zdjecie142.jpeg">
+<img src="Zdjecie143.jpeg">
+<img src="Zdjecie144.jpeg">
+<img src="Zdjecie145.jpeg">
+<img src="Zdjecie146.jpeg">
+<img src="Zdjecie147.jpeg">
+<img src="Zdjecie148.jpeg">
+<img src="Zdjecie149.jpeg">
+<img src="Zdjecie150.jpeg">
+<img src="Zdjecie151.jpeg">
+<img src="Zdjecie152.jpeg">
+<img src="Zdjecie153.jpeg">
+<img src="Zdjecie154.jpeg">
+<img src="Zdjecie155.jpeg">
+<img src="Zdjecie156.jpeg">
+<img src="Zdjecie157.jpeg">
+<img src="Zdjecie158.jpeg">
+<img src="Zdjecie159.jpeg">
+<img src="Zdjecie160.jpeg">
+<img src="Zdjecie161.jpeg">
+<img src="Zdjecie162.jpeg">
+<img src="Zdjecie163.jpeg">
+<img src="Zdjecie164.jpeg">
+<img src="Zdjecie165.jpeg">
+<img src="Zdjecie166.jpeg">
+<img src="Zdjecie167.jpeg">
+<img src="Zdjecie168.jpeg">
+<img src="Zdjecie169.jpeg">
+<img src="Zdjecie170.jpeg">
+<img src="Zdjecie171.jpeg">
+<img src="Zdjecie172.jpeg">
+<img src="Zdjecie173.jpeg">
+<img src="Zdjecie174.jpeg">
+<img src="Zdjecie175.jpeg">
+<img src="Zdjecie176.jpeg">
+<img src="Zdjecie177.jpeg">
+<img src="Zdjecie178.jpeg">
+<img src="Zdjecie179.jpeg">
+<img src="Zdjecie180.jpeg">
+<img src="Zdjecie181.jpeg">
+<img src="Zdjecie182.jpeg">
+<img src="Zdjecie183.jpeg">
+<img src="Zdjecie184.jpeg">
+<img src="Zdjecie185.jpeg">
+<img src="Zdjecie186.jpeg">
+<img src="Zdjecie187.jpeg">
+<img src="Zdjecie188.jpeg">
+<img src="Zdjecie189.jpeg">
+<img src="Zdjecie190.jpeg">
+<img src="Zdjecie191.jpeg">
+<img src="Zdjecie192.jpeg">
+<img src="Zdjecie193.jpeg">
+<img src="Zdjecie194.jpeg">
+<img src="Zdjecie195.jpeg">
+<img src="Zdjecie196.jpeg">
+<img src="Zdjecie197.jpeg">
+<img src="Zdjecie198.jpeg">
+<img src="Zdjecie199.jpeg">
+<img src="Zdjecie200.jpeg">
+<img src="Zdjecie201.jpeg">
+<img src="Zdjecie202.jpeg">
+<img src="Zdjecie203.jpeg">
+<img src="Zdjecie204.jpeg">
+<img src="Zdjecie205.jpeg">
+<img src="Zdjecie206.jpeg">
+<img src="Zdjecie207.jpeg">
+<img src="Zdjecie208.jpeg">
+<img src="Zdjecie209.jpeg">
+<img src="Zdjecie210.jpeg">
+<img src="Zdjecie211.jpeg">
+<img src="Zdjecie212.jpeg">
+<img src="Zdjecie213.jpeg">
+<img src="Zdjecie214.jpeg">
+<img src="Zdjecie215.jpeg">
+<img src="Zdjecie216.jpeg">
+<img src="Zdjecie217.jpeg">
+<img src="Zdjecie218.jpeg">
+<img src="Zdjecie219.jpeg">
+<img src="Zdjecie220.jpeg">
+<img src="Zdjecie221.jpeg">
+<img src="Zdjecie222.jpeg">
+<img src="Zdjecie223.jpeg">
+<img src="Zdjecie224.jpeg">
+<img src="Zdjecie225.jpeg">
+<img src="Zdjecie226.jpeg">
+<img src="Zdjecie227.jpeg">
+<img src="Zdjecie228.jpeg">
+<img src="Zdjecie229.jpeg">
+<img src="Zdjecie230.jpeg">
+<img src="Zdjecie231.jpeg">
+<img src="Zdjecie232.jpeg">
+<img src="Zdjecie233.jpeg">
+<img src="Zdjecie234.jpeg">
+<img src="Zdjecie235.jpeg">
+<img src="Zdjecie236.jpeg">
+<img src="Zdjecie237.jpeg">
+<img src="Zdjecie238.jpeg">
+<img src="Zdjecie239.jpeg">
+<img src="Zdjecie240.jpeg">
+<img src="Zdjecie241.jpeg">
+<img src="Zdjecie242.jpeg">
+<img src="Zdjecie243.jpeg">
+<img src="Zdjecie244.jpeg">
+<img src="Zdjecie245.jpeg">
+<img src="Zdjecie246.jpeg">
+<img src="Zdjecie247.jpeg">
+<img src="Zdjecie248.jpeg">
+<img src="Zdjecie249.jpeg">
+<img src="Zdjecie250.jpeg">
+<img src="Zdjecie251.jpeg">
+<img src="Zdjecie252.jpeg">
+<img src="Zdjecie253.jpeg">
+<img src="Zdjecie254.jpeg">
+<img src="Zdjecie255.jpeg">
+<img src="Zdjecie256.jpeg">
+<img src="Zdjecie257.jpeg">
+<img src="Zdjecie258.jpeg">
+<img src="Zdjecie259.jpeg">
+<img src="Zdjecie260.jpeg">
+<img src="Zdjecie261.jpeg">
+<img src="Zdjecie262.jpeg">
+<img src="Zdjecie263.jpeg">
+<img src="Zdjecie264.jpeg">
+<img src="Zdjecie265.jpeg">
+<img src="Zdjecie266.jpeg">
+<img src="Zdjecie267.jpeg">
+<img src="Zdjecie268.jpeg">
+<img src="Zdjecie269.jpeg">
+<img src="Zdjecie270.jpeg">
+<img src="Zdjecie271.jpeg">
+<img src="Zdjecie272.jpeg">
+<img src="Zdjecie273.jpeg">
+<img src="Zdjecie274.jpeg">
+<img src="Zdjecie275.jpeg">
+<img src="Zdjecie276.jpeg">
+<img src="Zdjecie277.jpeg">
+<img src="Zdjecie278.jpeg">
+<img src="Zdjecie279.jpeg">
+<img src="Zdjecie280.jpeg">
+<img src="Zdjecie281.jpeg">
+<img src="Zdjecie282.jpeg">
+<img src="Zdjecie283.jpeg">
+<img src="Zdjecie284.jpeg">
+<img src="Zdjecie285.jpeg">
+<img src="Zdjecie286.jpeg">
+<img src="Zdjecie287.jpeg">
+<img src="Zdjecie288.jpeg">
+<img src="Zdjecie289.jpeg">
+<img src="Zdjecie290.jpeg">
+<img src="Zdjecie291.jpeg">
+<img src="Zdjecie292.jpeg">
+<img src="Zdjecie293.jpeg">
+<img src="Zdjecie294.jpeg">
+<img src="Zdjecie295.jpeg">
+<img src="Zdjecie296.jpeg">
+<img src="Zdjecie297.jpeg">
+<img src="Zdjecie298.jpeg">
+<img src="Zdjecie299.jpeg">
+<img src="Zdjecie300.jpeg">
+<img src="Zdjecie301.jpeg">
+<img src="Zdjecie302.jpeg">
+<img src="Zdjecie303.jpeg">
+<img src="Zdjecie304.jpeg">
+<img src="Zdjecie305.jpeg">
+<img src="Zdjecie306.jpeg">
+<img src="Zdjecie307.jpeg">
+<img src="Zdjecie308.jpeg">
+<img src="Zdjecie309.jpeg">
+<img src="Zdjecie310.jpeg">
+<img src="Zdjecie311.jpeg">
+<img src="Zdjecie312.jpeg">
+<img src="Zdjecie313.jpeg">
+<img src="Zdjecie314.jpeg">
+<img src="Zdjecie315.jpeg">
+<img src="Zdjecie316.jpeg">
+<img src="Zdjecie317.jpeg">
+<img src="Zdjecie318.jpeg">
+<img src="Zdjecie319.jpeg">
+<img src="Zdjecie320.jpeg">
+<img src="Zdjecie321.jpeg">
+<img src="Zdjecie322.jpeg">
+<img src="Zdjecie323.jpeg">
+<img src="Zdjecie324.jpeg">
+<img src="Zdjecie325.jpeg">
+<img src="Zdjecie326.jpeg">
+<img src="Zdjecie327.jpeg">
+<img src="Zdjecie328.jpeg">
+<img src="Zdjecie329.jpeg">
+<img src="Zdjecie330.jpeg">
+<img src="Zdjecie331.jpeg">
+<img src="Zdjecie332.jpeg">
+<img src="Zdjecie333.jpeg">
+<img src="Zdjecie334.jpeg">
+<img src="Zdjecie335.jpeg">
+<img src="Zdjecie336.jpeg">
+<img src="Zdjecie337.jpeg">
+<img src="Zdjecie338.jpeg">
+<img src="Zdjecie339.jpeg">
+<img src="Zdjecie340.jpeg">
+<img src="Zdjecie341.jpeg">
+<img src="Zdjecie342.jpeg">
+<img src="Zdjecie343.jpeg">
+<img src="Zdjecie344.jpeg">
+<img src="Zdjecie345.jpeg">
+<img src="Zdjecie346.jpeg">
+<img src="Zdjecie347.jpeg">
+<img src="Zdjecie348.jpeg">
+<img src="Zdjecie349.jpeg">
+<img src="Zdjecie350.jpeg">
+<img src="Zdjecie351.jpeg">
+<img src="Zdjecie352.jpeg">
+<img src="Zdjecie353.jpeg">
+<img src="Zdjecie354.jpeg">
+<img src="Zdjecie355.jpeg">
+<img src="Zdjecie356.jpeg">
+<img src="Zdjecie357.jpeg">
+<img src="Zdjecie358.jpeg">
+<img src="Zdjecie359.jpeg">
+<img src="Zdjecie360.jpeg">
+<img src="Zdjecie361.jpeg">
+<img src="Zdjecie362.jpeg">
+<img src="Zdjecie363.jpeg">
+<img src="Zdjecie364.jpeg">
+<img src="Zdjecie365.jpeg">
+<img src="Zdjecie366.jpeg">
+<img src="Zdjecie367.jpeg">
+<img src="Zdjecie368.jpeg">
+<img src="Zdjecie369.jpeg">
+<img src="Zdjecie370.jpeg">
+<img src="Zdjecie371.jpeg">
+<img src="Zdjecie372.jpeg">
+<img src="Zdjecie373.jpeg">
+<img src="Zdjecie374.jpeg">
+<img src="Zdjecie375.jpeg">
+<img src="Zdjecie376.jpeg">
+<img src="Zdjecie377.jpeg">
+<img src="Zdjecie378.jpeg">
+</div>
+
+<div class="photo-credit">
+    <div>fot. Piotr Łysakowski | Nie tylko samoloty</div>
+    <div>fot. Bartosz Seifert</div>
+    <div>fot. Fundacja Pro Cello</div>
+</div>
+
+<div class="lightbox" id="lightbox">
+    <span class="arrow left">&#10094;</span>
+    <img src="">
+    <span class="arrow right">&#10095;</span>
+</div>
+
+<script>
+    const images = document.querySelectorAll('.gallery img');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = lightbox.querySelector('img');
+    const leftArrow = document.querySelector('.arrow.left');
+    const rightArrow = document.querySelector('.arrow.right');
+
+    let currentIndex = 0;
+
+    function showImage(index) {
+        currentIndex = index;
+        lightboxImg.src = images[currentIndex].src;
+    }
+
+    images.forEach((img, index) => {
+        img.addEventListener('click', () => {
+            lightbox.style.display = 'flex';
+            showImage(index);
+        });
+    });
+
+    function nextImage() {
+        currentIndex = (currentIndex + 1) % images.length;
+        showImage(currentIndex);
+    }
+
+    function prevImage() {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        showImage(currentIndex);
+    }
+
+    rightArrow.onclick = nextImage;
+    leftArrow.onclick = prevImage;
+
+    // klik poza zdjęciem zamyka
+    lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) {
+            lightbox.style.display = 'none';
+        }
+    });
+
+    // klawiatura
+    document.addEventListener('keydown', (e) => {
+        if (lightbox.style.display === 'flex') {
+            if (e.key === 'ArrowRight') nextImage();
+            if (e.key === 'ArrowLeft') prevImage();
+            if (e.key === 'Escape') lightbox.style.display = 'none';
+        }
+    });
+
+    // swipe (mobile)
+    let startX = 0;
+
+    lightbox.addEventListener('touchstart', e => {
+        startX = e.touches[0].clientX;
+    });
+
+    lightbox.addEventListener('touchend', e => {
+        let endX = e.changedTouches[0].clientX;
+        if (startX - endX > 50) nextImage();
+        if (endX - startX > 50) prevImage();
+    });
+</script>
+
+</body>
+</html>
